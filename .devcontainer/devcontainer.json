@@ -1,19 +1,30 @@
 {
-  "name": "HugoBlox Codespace",
-  "image": "ghcr.io/HugoBlox/hugo-blox-dev:hugo0.162.0",
-  "updateContentCommand": "pnpm install --frozen-lockfile --prefer-offline",
+  "name": "academic-cv",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "containerEnv": {
+    "HUGO_VERSION": "0.162.0",
+    "GO_VERSION": "1.21.5",
+    "NODE_VERSION": "22",
+    "PNPM_FLAGS": "--no-frozen-lockfile",
+    "HUGO_ENABLEGITINFO": "true",
+    "HUGO_LOG_I18N_WARNINGS": "true",
+    "HUGO_LOG_WARNINGS": "true",
+    "FORCE_COLOR": "1"
+  },
+  "updateContentCommand": "corepack enable && pnpm install --no-frozen-lockfile",
   "postCreateCommand": "pnpm --version && hugo version",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ownable.ownable"
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml",
+        "bungcip.better-toml"
       ]
     }
   },
-  "mounts": [
-    "source=pnpm-store,target=/home/vscode/.local/share/pnpm,type=volume"
-  ],
-  "remoteUser": "vscode",
   "forwardPorts": [
     1313
   ],
@@ -21,5 +32,6 @@
     "1313": {
       "label": "Hugo Server"
     }
-  }
+  },
+  "remoteUser": "node"
 }
