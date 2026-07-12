@@ -2,115 +2,97 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  display: José Bayoán Santiago Calderón
+  given: José Bayoán
+  family: Santiago Calderón
+  alternate: ''
+  pronunciation: ''
   pronouns: he/him
 postnominals:
   - PhD
-  - MIEEE
 status:
   icon: "☕️"
-role: Senior AI Research Scientist
+role: Research Economist
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
-
+  José Bayoán Santiago Calderón is a research economist whose work focuses on official statistics, computational methods, and data-driven public policy research.
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
-
+  - name: Bureau of Economic Analysis
+    url: https://www.bea.gov/
+image:
+  src: /media/authors/me.png
+  alt: José Bayoán Santiago Calderón
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
+    url: mailto:naoyabpr@gmail.com
+    label: Email
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/Nosferican
+    label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://www.linkedin.com/in/jbscpr
+    label: LinkedIn
+  - icon: brands/instagram
+    url: https://instagram.com/Nosferican
+    label: Instagram
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
-
+    url: https://orcid.org/0000-0002-8406-6175
+    label: ORCID
+  - icon: academic-cap
+    url: /uploads/CV.pdf
+    label: Download CV
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
-
+  - Official Statistics
+  - Computational Economics
+  - Data Science
+  - Open-Source Software
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
+  - degree: PhD in Economics
+    institution: Claremont Graduate University
     start: 2015-09-01
     end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
+    logo: /media/logos/cgu.svg
+  - degree: MA in Economics
+    institution: Claremont Graduate University
     start: 2013-09-01
     end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
+    logo: /media/logos/cgu.svg
+  - degree: BA in Economics
+    institution: Southwestern University
     start: 2009-09-01
     end: 2013-05-31
-
+    logo: /media/logos/southwestern.svg
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
-
+  - role: Research Economist
+    org: Bureau of Economic Analysis
+    start: 2021-05-01
+    logo: /media/logos/bea.svg
+    summary: Research on digital economy, intangible assets, and official measurement methods.
+  - role: Senior Scientist II
+    org: Pumas-AI
+    start: 2018-08-01
+    end: 2023-12-01
+    logo: /media/logos/pumas.svg
+    summary: Scientific consulting, clinical trial evaluation, and software development for quantitative workflows.
+  - role: Postdoctoral Research Associate
+    org: University of Virginia
+    start: 2019-05-01
+    end: 2021-05-01
+    logo: /media/logos/uva.svg
+    summary: Research support for public-sector and interdisciplinary analytic projects.
 skills:
-  - name: Technical Skills
+  - name: Research
     items:
+      - label: Economics
+        level: 5
+      - label: Statistics
+        level: 5
+      - label: Data Science
+        level: 5
+  - name: Methods
+    items:
+      - label: Julia
+        level: 4
+      - label: R
+        level: 4
       - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
         level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
-languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy

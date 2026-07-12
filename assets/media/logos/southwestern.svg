@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" role="img" aria-label="Southwestern University logo">
+  <rect width="320" height="140" rx="16" fill="#7b1fa2"/>
+  <rect x="28" y="28" width="84" height="84" rx="16" fill="#ffffff"/>
+  <path d="M48 56h44v12H48zM48 74h44v12H48z" fill="#7b1fa2"/>
+  <text x="132" y="66" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ffffff">Southwestern</text>
+  <text x="132" y="94" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ffffff">University</text>
+</svg>

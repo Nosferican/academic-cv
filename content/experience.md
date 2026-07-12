@@ -6,28 +6,40 @@ type: landing
 design:
   spacing: '5rem'
 
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
 sections:
   - block: resume-experience
     content:
       username: me
     design:
-      # Hugo date format
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
-  - block: resume-skills
+  - block: markdown
     content:
-      title: Skills & Hobbies
-      username: me
-  - block: resume-awards
-    content:
-      title: Awards
-      username: me
-  - block: resume-languages
-    content:
-      title: Languages
-      username: me
+      title: 'Selected roles and institutions'
+      subtitle: ''
+      text: |-
+        <div class="experience-logo-grid">
+          <div class="experience-tile">
+            <img src="/media/logos/bea.svg" alt="Bureau of Economic Analysis logo" />
+            <div><strong>Research Economist</strong><br/>Bureau of Economic Analysis</div>
+          </div>
+          <div class="experience-tile">
+            <img src="/media/logos/cgu.svg" alt="Claremont Graduate University logo" />
+            <div><strong>PhD and MA in Economics</strong><br/>Claremont Graduate University</div>
+          </div>
+          <div class="experience-tile">
+            <img src="/media/logos/southwestern.svg" alt="Southwestern University logo" />
+            <div><strong>BA in Economics</strong><br/>Southwestern University</div>
+          </div>
+          <div class="experience-tile">
+            <img src="/media/logos/uva.svg" alt="University of Virginia logo" />
+            <div><strong>Postdoctoral Research Associate</strong><br/>University of Virginia</div>
+          </div>
+          <div class="experience-tile">
+            <img src="/media/logos/pumas.svg" alt="Pumas-AI logo" />
+            <div><strong>Senior Scientist II</strong><br/>Pumas-AI</div>
+          </div>
+        </div>
+    design:
+      columns: '1'
 ---

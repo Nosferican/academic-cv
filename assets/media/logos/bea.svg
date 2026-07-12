@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" role="img" aria-label="Bureau of Economic Analysis logo">
+  <rect width="320" height="140" rx="16" fill="#0f4c81"/>
+  <rect x="24" y="24" width="92" height="92" rx="14" fill="#ffffff"/>
+  <path d="M56 46h28v24H56zM56 78h28v20H56z" fill="#0f4c81"/>
+  <path d="M132 42h16v56h-16z" fill="#ffffff"/>
+  <path d="M132 42h52l-24 28 24 28h-52l24-28z" fill="#8fd3ff"/>
+  <text x="132" y="112" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#ffffff">Bureau of Economic Analysis</text>
+</svg>

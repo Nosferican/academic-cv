@@ -1,0 +1,72 @@
+/* Personal branding overrides for the migrated site */
+
+:root {
+  --jbsc-primary: #0f4c81;
+  --jbsc-secondary: #0b7a75;
+  --jbsc-accent: #e76f51;
+}
+
+.article-style,
+.bio-text {
+  text-align: justify;
+}
+
+.experience-logo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.experience-tile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(15, 76, 129, 0.16);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(15, 76, 129, 0.08);
+}
+
+.dark .experience-tile {
+  background: rgba(17, 24, 39, 0.7);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.experience-tile img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.experience-tile strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.fa-linkedin,
+.fa-linkedin-in {
+  color: #0a66c2;
+}
+
+.fa-github {
+  color: #24292f;
+}
+
+.fa-instagram {
+  color: #e4405f;
+}
+
+.fa-envelope {
+  color: var(--jbsc-primary);
+}
+
+.ai-orcid {
+  color: #a6ce39;
+}
+
+.hero-title {
+  color: var(--jbsc-primary);
+}
