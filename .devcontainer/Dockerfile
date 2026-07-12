@@ -24,5 +24,5 @@ RUN apt-get update \
     && install -m 0755 /tmp/hugo /usr/local/bin/hugo \
     && rm -f /tmp/hugo /tmp/hugo.tar.gz \
     && corepack enable \
-    && corepack prepare pnpm@10.14.0 --activate \
+    && npm install -g --force pnpm@10.14.0 \
     && pnpm --version
