@@ -14,8 +14,8 @@
     "HUGO_LOG_WARNINGS": "true",
     "FORCE_COLOR": "1"
   },
-  "updateContentCommand": "corepack enable && pnpm install --no-frozen-lockfile",
-  "postCreateCommand": "pnpm --version && hugo version",
+  "updateContentCommand": "corepack enable && /home/node/.local/bin/pnpm install --no-frozen-lockfile",
+  "postCreateCommand": "/home/node/.local/bin/pnpm --version && hugo version",
   "customizations": {
     "vscode": {
       "extensions": [

@@ -24,5 +24,7 @@ RUN apt-get update \
     && install -m 0755 /tmp/hugo /usr/local/bin/hugo \
     && rm -f /tmp/hugo /tmp/hugo.tar.gz \
     && corepack enable \
-    && npm install -g --force pnpm@10.14.0 \
-    && pnpm --version
+    && mkdir -p /home/node/.local/share/pnpm \
+    && chown -R node:node /home/node/.local \
+    && npm install -g --prefix /home/node/.local pnpm@10.14.0 \
+    && /home/node/.local/bin/pnpm --version
