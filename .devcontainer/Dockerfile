@@ -1,4 +1,4 @@
-FROM node:22-bookworm
+FROM node:22-alpine
 
 ARG HUGO_VERSION=0.162.0
 ARG GO_VERSION=1.21.5
@@ -13,9 +13,7 @@ ENV HUGO_LOG_WARNINGS=true
 ENV FORCE_COLOR=1
 ENV PNPM_FLAGS=--no-frozen-lockfile
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ca-certificates curl git tar wget \
-    && rm -rf /var/lib/apt/lists/* \
+RUN apk add --no-cache ca-certificates curl git tar wget bash \
     && curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" -o /tmp/go.tar.gz \
     && tar -C /usr/local -xzf /tmp/go.tar.gz \
     && rm /tmp/go.tar.gz \
@@ -23,8 +21,4 @@ RUN apt-get update \
     && tar -C /tmp -xzf /tmp/hugo.tar.gz \
     && install -m 0755 /tmp/hugo /usr/local/bin/hugo \
     && rm -f /tmp/hugo /tmp/hugo.tar.gz \
-    && corepack enable \
-    && mkdir -p /home/node/.local/share/pnpm \
-    && chown -R node:node /home/node/.local \
-    && npm install -g --prefix /home/node/.local pnpm@10.14.0 \
-    && /home/node/.local/bin/pnpm --version
+    && npm install -g pnpm@10.14.0
